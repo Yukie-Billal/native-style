@@ -1,90 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title></title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        .container {
-            height: 100dvh;
-            width: 100dvw;
-            background-color: red;
-        }
-        .alert-container {
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: 1001;
-            height: 100%;
-            width: 100%;
-            background-color: rgba(92, 43, 122, .8);
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        height: 100dvh;
+        width: 100dvw;
+        background-color: red;
+      }
+      .alert-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1001;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(92, 43, 122, 0.8);
 
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            
-            animation: showalertcontainer .8s;
-        }
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
-        .alert-content {
-            width: 200px;
-            height: fit-content;
-            background-color: white;
-            padding: 24px 40px;
-            border-radius: 3px;
+        animation: showalertcontainer 0.8s;
+      }
 
-            animation: showalert .8s;
-        }
+      .alert-content {
+        width: 200px;
+        height: fit-content;
+        background-color: white;
+        padding: 24px 40px;
+        border-radius: 3px;
 
-        @keyframes showalertcontainer {
-            from {
-                opacity: .1;
-            }
-            to {
-                opacity: 1;
-            }
+        animation: showalert 0.8s;
+      }
+
+      @keyframes showalertcontainer {
+        from {
+          opacity: 0.1;
         }
-        @keyframes showalert {
-            from {
-                opacity: .2;
-                transform: translateY(-18px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0px);
-            }
+        to {
+          opacity: 1;
         }
+      }
+      @keyframes showalert {
+        from {
+          opacity: 0.2;
+          transform: translateY(-18px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0px);
+        }
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <h2>Ini isi content</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla quo culpa qui veniam, nihil quos facilis dicta. Corrupti aliquam aspernatur quaerat minus pariatur, placeat esse ad, minima molestias accusantium quod iusto soluta laboriosam est magnam repellendus repudiandae! Cum qui explicabo praesentium quisquam nam mollitia delectus laudantium, ipsa corrupti corporis consequatur saepe amet quas. Culpa impedit maiores quae illo asperiores. Quasi dignissimos quis, sint at nisi, quas tempore blanditiis vero inventore tempora, excepturi corrupti dolores sed corporis cupiditate asperiores ex officiis aspernatur ipsum amet optio nam reprehenderit doloribus ad? Minima non repellat ducimus accusamus fugiat amet accusantium reprehenderit quidem at dignissimos!</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla quo culpa qui veniam, nihil quos facilis dicta. Corrupti aliquam aspernatur quaerat minus pariatur, placeat esse ad, minima molestias accusantium quod iusto soluta laboriosam est magnam repellendus repudiandae! Cum qui explicabo praesentium quisquam nam mollitia delectus laudantium, ipsa corrupti corporis consequatur saepe amet quas. Culpa impedit maiores quae illo asperiores. Quasi dignissimos quis, sint at nisi, quas tempore blanditiis vero inventore tempora, excepturi corrupti dolores sed corporis cupiditate asperiores ex officiis aspernatur ipsum amet optio nam reprehenderit doloribus ad? Minima non repellat ducimus accusamus fugiat amet accusantium reprehenderit quidem at dignissimos!</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla quo culpa qui veniam, nihil quos facilis dicta. Corrupti aliquam aspernatur quaerat minus pariatur, placeat esse ad, minima molestias accusantium quod iusto soluta laboriosam est magnam repellendus repudiandae! Cum qui explicabo praesentium quisquam nam mollitia delectus laudantium, ipsa corrupti corporis consequatur saepe amet quas. Culpa impedit maiores quae illo asperiores. Quasi dignissimos quis, sint at nisi, quas tempore blanditiis vero inventore tempora, excepturi corrupti dolores sed corporis cupiditate asperiores ex officiis aspernatur ipsum amet optio nam reprehenderit doloribus ad? Minima non repellat ducimus accusamus fugiat amet accusantium reprehenderit quidem at dignissimos!</p>
-        <button class="btn-show-alert">Tampilkan alert</button>
+      <h2>Ini isi content</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla quo culpa qui veniam, nihil quos facilis dicta. Corrupti aliquam aspernatur quaerat minus pariatur, placeat esse ad, minima molestias accusantium quod iusto soluta laboriosam est magnam repellendus repudiandae! Cum qui explicabo
+        praesentium quisquam nam mollitia delectus laudantium, ipsa corrupti corporis consequatur saepe amet quas. Culpa impedit maiores quae illo asperiores. Quasi dignissimos quis, sint at nisi, quas tempore blanditiis vero inventore tempora, excepturi corrupti dolores sed corporis cupiditate
+        asperiores ex officiis aspernatur ipsum amet optio nam reprehenderit doloribus ad? Minima non repellat ducimus accusamus fugiat amet accusantium reprehenderit quidem at dignissimos!
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla quo culpa qui veniam, nihil quos facilis dicta. Corrupti aliquam aspernatur quaerat minus pariatur, placeat esse ad, minima molestias accusantium quod iusto soluta laboriosam est magnam repellendus repudiandae! Cum qui explicabo
+        praesentium quisquam nam mollitia delectus laudantium, ipsa corrupti corporis consequatur saepe amet quas. Culpa impedit maiores quae illo asperiores. Quasi dignissimos quis, sint at nisi, quas tempore blanditiis vero inventore tempora, excepturi corrupti dolores sed corporis cupiditate
+        asperiores ex officiis aspernatur ipsum amet optio nam reprehenderit doloribus ad? Minima non repellat ducimus accusamus fugiat amet accusantium reprehenderit quidem at dignissimos!
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla quo culpa qui veniam, nihil quos facilis dicta. Corrupti aliquam aspernatur quaerat minus pariatur, placeat esse ad, minima molestias accusantium quod iusto soluta laboriosam est magnam repellendus repudiandae! Cum qui explicabo
+        praesentium quisquam nam mollitia delectus laudantium, ipsa corrupti corporis consequatur saepe amet quas. Culpa impedit maiores quae illo asperiores. Quasi dignissimos quis, sint at nisi, quas tempore blanditiis vero inventore tempora, excepturi corrupti dolores sed corporis cupiditate
+        asperiores ex officiis aspernatur ipsum amet optio nam reprehenderit doloribus ad? Minima non repellat ducimus accusamus fugiat amet accusantium reprehenderit quidem at dignissimos!
+      </p>
+      <button class="btn-show-alert">Tampilkan alert</button>
     </div>
     <script>
-        const alertHtml = `<div class="alert-container">
+      const alertHtml = `<div class="alert-container">
         <div class="alert-content">
             <div class="alert-body">
                 Ini alert
             </div>
         </div>
-    </div>`
-        const buttonShowAlert = document.querySelector("button.btn-show-alert")
-        const handleClickShowAlert = (e) => {
-            e.preventDefault()
-            const oldBody = document.body.innerHTML
-            document.body.innerHTML =  oldBody + alertHtml
-        }
+    </div>`;
+      const handleClickShowAlert = () => {
+        console.log("alert show");
+        const oldBody = document.body.innerHTML;
+        document.body.innerHTML = oldBody + alertHtml;
+      };
 
-        buttonShowAlert.addEventListener("click", handleClickShowAlert)
+      const closeAlert = () => {
+        const myalert = document.querySelector(".alert-container");
+        if (myalert) {
+          document.body.removeChild(myalert);
+        }
+      };
+
+      document.addEventListener("keydown", (e) => {
+        e.preventDefault();
+        if (e.key === "Escape") {
+          closeAlert();
+        }
+      });
+
+      document.addEventListener("click", (e) => {
+        e.preventDefault();
+        const buttonShowAlert = document.querySelector("button.btn-show-alert");
+        if (e.target.nodeName === buttonShowAlert.nodeName) {
+          handleClickShowAlert();
+        }
+      });
     </script>
-</body>
+  </body>
 </html>
